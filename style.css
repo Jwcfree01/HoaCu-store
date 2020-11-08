@@ -1,0 +1,300 @@
+html, body {
+    margin: px auto;
+    padding: 0px auto;
+    font-family: Myriad Pro;
+}
+
+body {
+    background: #fff;
+    color: #ccc;
+ }
+ 
+
+#header {
+    width: 1340px;
+    height: 100px;
+    background:#d16a6a;
+}
+
+.container {
+    width: 800px;
+    height: 100px;
+    float: left;
+}
+
+#search{
+    width: 600px;
+    height: 40px;
+    margin-left: 150px;
+    margin-top: 20px;
+}
+
+.icon {
+    color: #959595;
+}
+
+.account {
+    width: 190px;
+    height: 100px;
+    float: left;
+}
+
+.account .one {
+    list-style: none;
+    width: auto;
+    height: 0px;
+    padding-left: 80px;
+    padding-top: 10px;
+}
+
+.account .two li {
+    height: 0px;
+    list-style: none;
+    padding-right: 10px;
+    margin-top: 20px;
+    float: left; 
+}
+
+#right {
+    float: left;
+    width: 170px;
+    height: 100px;
+}
+
+#right .trogiup {
+    width: auto;
+    height: 30px;
+    float: right;
+}
+
+.trogiup li {
+    list-style: none;
+    float: right;
+    padding-top: 5px;
+    padding-left: 5px;
+    padding-right: 10px;
+}
+
+#menu{
+    width: 1340px;
+    height: 50px;
+}
+
+#menu ul li{
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 400;
+    color: black;
+    list-style: none;
+    float: left;
+    height: 50px;
+    line-height: 50px;
+    padding: 0px 30px 0px 30px;
+    margin-left: 10px;
+}
+#menu ul li:hover{
+    color: aqua;
+    cursor:pointer;
+}
+
+#content{
+    width: 1340px;
+    height: 800px;
+}
+
+#content #content-top{
+    width: 1340px;
+    height: 350px;
+}
+
+.top-left{
+    width: 350px;
+    height: 350px;
+    float: left;
+    padding-left: 80px;
+}
+
+.top-right{
+    width: 910px;
+    height: 350px;
+    float: left;
+}
+
+.hangmoi{
+    padding-top: 10px;
+    padding-left: 30px;
+    list-style: none;
+    font-weight: 800px;
+    font-size: 23px;
+    font-family: Myriad Pro;
+}
+
+#sanphammoi{
+    width: 220px;
+    height: 325px;
+    margin-left: 50px;
+    float: left;
+}
+
+.m1{
+    list-style: none;
+    text-align: center;
+}
+
+#sanph{
+    width: 220px;
+    height: 260px;
+    background: yellow;
+    margin-left: 50px;
+    float: left;
+}
+
+#sanphammoi-bot{
+    width: 200px;
+    height: 300px;
+    margin-left: 50px;
+    float: left;
+}
+
+#footer{
+    width: auto;
+    height: 180px;
+    background: #d16a6a;
+    clear: left;
+}
+
+.hoacu{
+    list-style: none;
+    text-decoration: none;
+    font-weight: 600;
+    padding-left: 40px;
+    padding-top: 20px;
+    float: left;
+}
+
+.diachi{
+    list-style: none;
+    text-decoration: none;
+    font-weight: 600;
+    padding-left: 70px;
+    padding-top: 20px;
+    float: left;
+}
+
+.lienhe{
+    list-style: none;
+    text-decoration: none;
+    font-weight: 600;
+    padding-left: 70px;
+    padding-top: 20px;
+    float: left;
+    text-align: center;
+}
+
+.lienhe ul {
+    padding-left: 20px;
+}
+
+.lienhe ul li{
+    padding-top: 10px;
+    list-style: none;
+    float: left;
+    padding-right: 20px;
+}
+
+.contact:hover{
+    color: aqua;
+}
+
+.banquyen{
+    list-style: none;
+    text-decoration: none;
+    padding-left: 115px;
+    padding-top: 120px;
+    float: left;
+    padding-right: 20px;
+}
+
+.banquyen ul{
+    list-style: none;
+    font-size: 15px;   
+}
+
+.banquyen ul li{
+    float: left;
+    padding-right: 5px;
+}
+
+@media only screen and (max-width: 1024px) {
+    /*-- Code cho màn hình vừa (Table) viết ở đây --*/
+    body {
+        background: yellowgreen;
+        color: #ccc;
+     }
+     
+    
+    #header {
+        max-width: auto;
+        height: 100px;
+        background:whitesmoke;
+    }
+    
+    .container {
+        max-width: auto;
+        height: 100px;
+        float: left;
+    }
+    
+    #search{
+        max-width: auto;
+        height: 40px;
+        margin-left: 150px;
+        margin-top: 20px;
+    }
+    
+    .icon {
+        color: #959595;
+    }
+    
+    .account {
+        max-width: auto;
+        height: 100px;
+        float: left;
+    }
+    
+    .account .one {
+        list-style: none;
+        max-width: auto;
+        height: 0px;
+        padding-left: 80px;
+        padding-top: 10px;
+    }
+    
+    .account .two li {
+        height: 0px;
+        list-style: none;
+        padding-right: 10px;
+        margin-top: 20px;
+        float: left; 
+    }
+    
+    #right {
+        float: left;
+        max-width: auto;
+        height: 100px;
+    }
+    
+    #right .trogiup {
+        max-width: auto;
+        height: 30px;
+        float: right;
+    }
+    
+    .trogiup li {
+        list-style: none;
+        float: right;
+        padding-top: 5px;
+        padding-left: 5px;
+        padding-right: 10px;
+    }
+}

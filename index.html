@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./style.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
+    <!-- favicon là logo ở trên tag mới chỉ cần thêm bằng link-->
+    <link rel="icon" href="./img/icon-favicon.png">
+    <!-- meta viewport dùng để reponsive phù hợp với mọi kích thướt thiết bị  -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>US</title>
+</head>
+
+<body>
+    <div id="header">
+        <div class="logo">
+            <a href="./index.html" target="blank"><img style="max-height: 100px; float: left;" src="./img/logo.png" alt=""></a>
+        </div>
+        <div class="container">
+            <input id="search" placeholder="Nhập tên sản phẩm..." />
+            <span class="icon"><i class="fa fa-search"></i></span>
+        </div>
+        <div class="account">
+            <ul class="one">
+                <li class="taikhoan">Tài khoản</li>
+            </ul>
+            <ul class="two">
+                <li class="dangnhap">Đăng nhập</li>
+                <li class="dangki">Đăng kí</li>
+            </ul>
+        </div>
+        <div id="right">
+            <div class="trogiup">
+                <img style="padding-top: 5px;" src="./img/question-mark.png" alt="">
+                <li>Trợ giúp</li>
+            </div>
+            <div class="cart">
+                <img style="max-height: 50px; padding-top: 30px;" src="./img/shopping-cart-of-checkered-design.png"
+                    alt="">
+            </div>
+        </div>
+    </div>
+    <div id="menu">
+        <ul>
+            <li <a href class="trangchu">Trang chủ </a></li>
+            <li <a href="" class="but">Bút </a></li>
+            <li <a href="" class="mau">Màu </a></li>
+            <li <a href="" class="giay">Giấy </a></li>
+            <li <a href="" class="sach">Sách </a></li>
+            <li <a href="" class="bodungcu">Bộ Dụng Cụ </a></li>
+            <li <a href="" class="bomarker">Bộ Marker </a></li>
+            <li <a href="" class="vanphongpham">Văn phòng phẩm </a></li>
+            <li <a href="" class="lienhe">Liên hệ </a></li>
+        </ul>
+    </div>
+    <div id="content">
+        <div id="content-top">
+            <div class="top-left">
+                <img style="min-width: 350px; min-height: 350px;" id="slideshow" src="./img/h1.jpg" alt="">
+                <script>
+                    var arr = [
+                        'img/h1.jpg',
+                        'img/h2.jpg',
+                        'img/h3.jpg',
+                        'img/h4.jpg',
+                    ];
+                    var currentIndex = 0;
+                    function slideshows() {
+                        document.getElementById('slideshow').src = arr[currentIndex];
+                        currentIndex++;
+                        if (currentIndex == arr.length) {
+                            currentIndex = 0;
+                        }
+                        setTimeout("slideshows()", 2000);
+                    }
+                    slideshows();
+                </script>
+            </div>
+            <div class="top-right">
+                <li class="hangmoi">HÀNG MỚI</li>
+                <hr style="border: 1px solid black; width: 850px;">
+                <div id="sanphammoi">
+                    <img style="max-width: 220px; max-height: 220px;" src="./img/m1.jpg" alt="">
+                    <li class="m1">BỘ CỌ VẼ ART SECRET 24 SIZE KÈM TÚI VẢI</li>
+                    <li style="list-style: none; text-align: center; color: #feb300;">530.000đ</li>
+                </div>
+                <div id="sanphammoi">
+                    <img style="max-width: 220px; max-height: 220px;" src="./img/m2.jpg" alt="">
+                    <li class="m1">Chì màu khô MARCO RAFFINE MÀU HỘP THIẾC</li>
+                    <li style="list-style: none; text-align: center; color: #feb300;">580.000đ</li>
+                </div>
+                <div id="sanphammoi">
+                    <img style="max-width: 220px; max-height: 220px;" src="./img/m3.jpg" alt="">
+                    <li class="m1">Bút chì màu</li>
+                    <li style="list-style: none; text-align: center; color: #feb300;">80.000đ</li>
+                </div>
+            </div>
+        </div>
+        <div id="content-bot">
+            <li class="hangmoi">SẢN PHẨM NỔI BẬT</li>
+            <hr style="border: 1px solid black; width: 1280px;">
+            <!-- row1 -->
+            <div id="sanphammoi-bot">
+                <img style="max-width: 200px; min-height: 250px;" src="./img/m4.jpg" alt="">
+                <li class="m1">Các loại tẩy dùng vẽ truyền thần</li>
+                <li style="list-style: none; text-align: center; color: #feb300;">12.000đ</li>
+            </div>
+            <div id="sanphammoi">
+                <img style="max-width: 200px; min-height: 250px;" src="./img/m5.jpg" alt="">
+                <li class="m1">Bút line bút đi nét chuyên nghiệp</li>
+                <li style="list-style: none; text-align: center; color: #feb300;">20.000đ</li>
+            </div>
+            <div id="sanphammoi">
+                <img style="max-width: 200px; min-height: 250px;" src="./img/m6.jpg" alt="">
+                <li class="m1">Màu Nước Giorgione Cake 36/48 </li>
+                <li style="list-style: none; text-align: center; color: #feb300;">199.000đ</li>
+            </div>
+            <div id="sanphammoi">
+                <img style="max-width: 200px; min-height: 250px;" src="./img/m7.jpg" alt="">
+                <li class="m1">Máy cắt ảnh giấy chính xác Mini A5 cầm tay 23cm</li>
+                <li style="list-style: none; text-align: center; color: #feb300;">150.000đ</li>
+            </div>
+            <div id="sanphammoi">
+                <img style="max-width: 200px; min-height: 250px;" src="./img/m8.jpg" alt="">
+                <li class="m1">Giấy vẽ màu nước Canson Imagine - 200gsm 50 tờ</li>
+                <li style="list-style: none; text-align: center; color: #feb300;">270.000đ</li>
+            </div>
+            <!-- row2 -->
+
+            <div id="sanphammoi-bot">
+                <img style="max-width: 200px; min-height: 250px;" src="./img/m9.jpg" alt="">
+                <li class="m1">Giá vẽ chân Inox (1 mặt)</li>
+                <li style="list-style: none; text-align: center; color: #feb300;">499.000đ</li>
+            </div>
+            <div id="sanphammoi">
+                <img style="max-width: 200px; min-height: 250px;" src="./img/m10.jpg" alt="">
+                <li class="m1">Phấn tiên (MASTERS PASTEL) - 48 màu</li>
+                <li style="list-style: none; text-align: center; color: #feb300;">200.000đ</li>
+            </div>
+            <div id="sanphammoi">
+                <img style="max-width: 200px; min-height: 250px;" src="./img/m11.jpg" alt="">
+                <li class="m1">Màu Vẽ Phấn Tiên Mungyo MP-36 - 36 Màu</li>
+                <li style="list-style: none; text-align: center; color: #feb300;">196.000đ</li>
+            </div>
+            <div id="sanphammoi">
+                <img style="max-width: 200px; min-height: 250px;" src="./img/m12.jpg" alt="">
+                <li class="m1">Băng Keo Washi Pink & Black</li>
+                <li style="list-style: none; text-align: center; color: #feb300;">120.000đ</li>
+            </div>
+            <div id="sanphammoi">
+                <img style="max-width: 200px; min-height: 250px;" src="./img/m13.jpg" alt="">
+                <li class="m1">10 cái / bộ Băng keo Washi đen</li>
+                <li style="list-style: none; text-align: center; color: #feb300;">50.000đ</li>
+            </div>
+            <!-- row3 -->
+            <div id="sanphammoi-bot">
+                <img style="max-width: 200px; min-height: 250px;" src="./img/m14.jpg" alt="">
+                <li class="m1">Bộ 20 món dụng cụ vẽ truyền thần, phác thảo Marco</li>
+                <li style="list-style: none; text-align: center; color: #feb300;">2250.000đ</li>
+            </div>
+            <div id="sanphammoi">
+                <img style="max-width: 200px; min-height: 250px;" src="./img/m15.jpg" alt="">
+                <li class="m1">BÚT LINE UNI PIN-200 CHÍNH HÃNG</li>
+                <li style="list-style: none; text-align: center; color: #feb300;">32.000đ</li>
+            </div>
+            <div id="sanphammoi">
+                <img style="max-width: 200px; min-height: 250px;" src="./img/m16.jpg" alt="">
+                <li class="m1">BÚT LINE UNI PIN-200 CHÍNH HÃNG</li>
+                <li style="list-style: none; text-align: center; color: #feb300;">69.000đ</li>
+            </div>
+            <div id="sanphammoi">
+                <img style="max-width: 200px; min-height: 250px;" src="./img/m17.jpg" alt="">
+                <li class="m1">Bộ 15 Cọ Vẽ Chuyên Nghiệp Hộp Đựng Cao Cấp, Tặng Bay Trộn Màu, Bọt Biển</li>
+                <li style="list-style: none; text-align: center; color: #feb300;">295.000đ</li>
+            </div>
+            <div id="sanphammoi">
+                <img style="max-width: 200px; min-height: 250px;" src="./img/m18.jpg" alt="">
+                <li class="m1">Cọ vẽ tường acrylic, gouache , màu dầu lông cứng</li>
+                <li style="list-style: none; text-align: center; color: #feb300;">27.000đ</li>
+            </div>
+            <!-- row4 -->
+            <div id="sanphammoi-bot">
+                <img style="max-width: 200px; min-height: 250px;" src="./img/m19.jpg" alt="">
+                <li class="m1">Bút đi nét Micron Pigma Manga - Màu</li>
+                <li style="list-style: none; text-align: center; color: #feb300;">25.000đ</li>
+            </div>
+            <div id="sanphammoi">
+                <img style="max-width: 200px; min-height: 250px;" src="./img/m20.jpg" alt="">
+                <li class="m1">Tập giấy vẽ Canson XL Mix Media 9" x 12"</li>
+                <li style="list-style: none; text-align: center; color: #feb300;">310.000đ</li>
+            </div>
+            <div id="sanphammoi">
+                <img style="max-width: 200px; min-height: 250px;" src="./img/m21.jpg" alt="">
+                <li class="m1">Sách dạy vẽ cho người mới</li>
+                <li style="list-style: none; text-align: center; color: #feb300;">79.000đ</li>
+            </div>
+            <div id="sanphammoi">
+                <img style="max-width: 200px; min-height: 250px;" src="./img/m22.jpg" alt="">
+                <li class="m1">Phần Mềm Thiết Kế Greatcad 2D (Tiếng Việt)</li>
+                <li style="list-style: none; text-align: center; color: #feb300;">1.899.000đ</li>
+            </div>
+            <div id="sanphammoi">
+                <img style="max-width: 200px; min-height: 250px;" src="./img/m23.jpg" alt="">
+                <li class="m1">Phần Mềm Thiết Kế Isolid 3D (Tiếng Việt)</li>
+                <li style="list-style: none; text-align: center; color: #feb300;">2.849.000đ</li>
+            </div>
+
+        </div>
+    </div>
+    <div id="footer">
+        <div class="hoacu">
+            <li style="font-size: 23px; text-align: center;">Họa Cụ US</li>
+            <li style="padding-top: 13px;">Chuyên cung cấp các mặt <br> hàng, sản phẩm chính hãng.</li>
+        </div>
+        <div class="diachi">
+            <li style="font-size: 23px; text-align: center;">Địa chỉ</li>
+            <li style="padding-top: 13px;">71 Dũng Sĩ Thanh Khê, Q.Thanh Khê, TP Đà Nẵng</li>
+            <li>Mở cửa: 6am - 10pm</li>
+            <li>Hot line: 0981729499</li>
+        </div>
+        <div class="lienhe">
+            <li style="font-size: 23px; text-align: center;">Liên hệ</li>
+            <li style="padding-top: 13px;">Hãy liên hệ với chúng tôi qua</li>
+            <ul>
+                <li <a href=""><img style="max-width: 50px; max-height: 50px;" class="contact" src="./img/facebook.png"
+                        alt=""></li>
+                <li <a href=""><img style="max-width: 50px; max-height: 50px;" class="contact" src="./img/zalo.jpg"
+                        alt=""></li>
+                <li <a href=""><img style="max-width: 50px; max-height: 50px;" class="contact" src="./img/skype.png"
+                        alt=""></li>
+            </ul>
+        </div>
+        <div class="banquyen">
+            <li>Bản quyền thuộc sở hữu của US Store</li>
+            <ul>
+                <li><img style="max-width: 15px; max-height: 15px;" src="./img/copyright-symbol.png" alt=""></li>
+                <li>Coppy right Jwcfree</li>
+            </ul>
+        </div>
+    </div>
+</body>
+
+</html>
